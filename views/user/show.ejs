@@ -1,0 +1,42 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Usuario</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="/">Inicio</a>
+            </li>
+            <li class="active">
+                <strong>Usuario</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row m-b-lg m-t-lg">
+        <div class="col-md-6">
+            <div class="profile-image">
+                <img src="<%= user.gravatarUrl %>" class="img-circle circle-border m-b-md" alt="profile">
+            </div>
+            <div class="profile-info">
+                <div class="">
+                    <div>
+                        <h2 class="no-margins">
+                            <%= user.name %> <%= user.lastname %>   
+                        </h2> 
+                        <% if(user.job!==undefined) { %>
+                            <h4><%= user.job %></h4>
+                        <% } %>
+                        <% if(user.about!==undefined) { %>
+                            <small>
+                                <%= user.about %>
+                            </small>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+       </div>       
+	</div>
+</div> 
